@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MatCommonModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
@@ -22,6 +23,8 @@ import { MainComponent } from './component/main/main.component';
 import { ArticleListComponent } from './component/article/article-list/article-list.component';
 import { ArticleCreateComponent } from './component/article/article-create/article-create.component';
 import { ArticleComponent } from './component/article/article.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,8 @@ import { ArticleComponent } from './component/article/article.component';
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
 
     MatCommonModule,
@@ -48,6 +53,8 @@ import { ArticleComponent } from './component/article/article.component';
     MatToolbarModule,
     MatCardModule,
     MatListModule,
+    MatSnackBarModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+
+export interface CreateArticleModel {
+    title: string
+    source_link: string
+    original_content: string
+}
