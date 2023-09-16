@@ -1,0 +1,14 @@
+<app-toolbar title="Article: {{article?.title}}"></app-toolbar>
+
+<h1>{{ article?.title }}</h1>
+<a [href]="article?.source_link" target="_blank">Source link</a>
+
+<mat-card *ngFor="let article_element of article?.article_elements" class="article_element">
+    <mat-card-content>
+        <p *ngFor="let sentence of article_element?.sentences">
+            <span *ngFor="let sentence_token of sentence?.sentence_tokens">
+                {{sentence_token?.value}}
+            </span>
+        </p>
+    </mat-card-content>
+</mat-card>
