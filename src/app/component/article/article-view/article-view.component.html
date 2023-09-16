@@ -1,7 +1,9 @@
-<app-toolbar title="Article: {{article?.title}}"></app-toolbar>
-
-<h1>{{ article?.title }}</h1>
-<a [href]="article?.source_link" target="_blank">Source link</a>
+<app-toolbar title="Article: {{article?.title}}">
+    <a mat-button [href]="article?.source_link" target="_blank">
+        <mat-icon>open_in_new</mat-icon>
+        Source link
+    </a>
+</app-toolbar>
 
 <mat-card *ngFor="let article_element of article?.article_elements" class="article_element">
     <mat-card-content>

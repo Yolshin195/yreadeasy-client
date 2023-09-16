@@ -25,6 +25,7 @@ import { ArticleCreateComponent } from './component/article/article-create/artic
 import { ArticleComponent } from './component/article/article.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatListModule,
     MatSnackBarModule,
     MatGridListModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

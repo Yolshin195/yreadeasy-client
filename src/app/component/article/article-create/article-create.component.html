@@ -6,26 +6,25 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <mat-grid-list cols="2" rowHeight="90px">
                 <mat-grid-tile colspan="1">
-                    <mat-form-field appearance="outline" style="width: 100%;">
+                    <mat-form-field appearance="outline" class="w-100 mr-05">
                         <mat-label>Title</mat-label>
                         <input matInput formControlName="title" placeholder="Enter title...">
-                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-icon matSuffix>title</mat-icon>
                     </mat-form-field>
                 </mat-grid-tile>
 
                 <mat-grid-tile colspan="1">
-                    <mat-form-field appearance="outline" style="width: 100%;">
+                    <mat-form-field appearance="outline" class="w-100 ml-05">
                         <mat-label>Source link</mat-label>
                         <input matInput formControlName="source_link" placeholder="Enter Source link...">
-                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-icon matSuffix>link</mat-icon>
                     </mat-form-field>
                 </mat-grid-tile>
 
                 <mat-grid-tile  colspan="2" rowspan="5">
-                    <mat-form-field appearance="outline" style="width: 100%; height: 95%;">
+                    <mat-form-field appearance="outline" class="w-100">
                         <mat-label>Content</mat-label>
-                        <textarea matInput formControlName="original_content"></textarea>
-                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <textarea matInput formControlName="original_content" rows="16"></textarea>
                     </mat-form-field>
                 </mat-grid-tile>
             </mat-grid-list>
